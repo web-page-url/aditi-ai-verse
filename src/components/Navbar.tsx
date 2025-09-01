@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Code2, Edit3, Menu, X } from 'lucide-react';
+import { Code2, Edit3, Mail, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -22,6 +22,12 @@ const Navbar = () => {
       label: 'Writing Assistant',
       icon: Edit3,
       description: 'AI-powered creative writing and text improvement'
+    },
+    {
+      href: '/email-assistant',
+      label: 'Email Assistant',
+      icon: Mail,
+      description: 'Transform thoughts into professional emails with AI'
     }
   ];
 
