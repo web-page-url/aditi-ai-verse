@@ -1,0 +1,32 @@
+#!/bin/sh
+# Pre-commit hook to prevent committing environment files
+
+echo "🔍 Checking for environment files..."
+
+# List of patterns to check for
+ENV_PATTERNS=".env .env.local .env.development .env.production .env.test"
+
+# Check if any environment files are being committed
+for pattern in $ENV_PATTERNS; do
+    if git diff --cached --name-only | grep -q "^$pattern$"; then
+        echo "❌ ERROR: Attempting to commit environment file: $pattern"
+        echo "🚨 Environment files should never be committed to version control!"
+        echo "💡 Add the file to .gitignore and use .env.example instead."
+        exit 1
+    fi
+done
+
+# Check for potential API keys in staged files
+if git diff --cached | grep -i "api[_-]key\|secret\|password\|token" | grep -v "your_.*_here\|example\|placeholder"; then
+    echo "⚠️  WARNING: Potential API keys or secrets detected in staged files!"
+    echo "🔍 Please review the changes and ensure no sensitive data is being committed."
+    echo "❓ Continue anyway? (y/N)"
+    read -r response
+    if [ "$response" != "y" ] && [ "$response" != "Y" ]; then
+        echo "❌ Commit aborted."
+        exit 1
+    fi
+fi
+
+echo "✅ Environment file check passed!"
+exit 0
