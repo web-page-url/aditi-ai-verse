@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Code2, Edit3, Mail, Menu, X } from 'lucide-react';
+import { Code2, Edit3, Mail, Wand2, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -28,6 +28,12 @@ const Navbar = () => {
       label: 'Email Assistant',
       icon: Mail,
       description: 'Transform thoughts into professional emails with AI'
+    },
+    {
+      href: '/prompt-generator',
+      label: 'Prompt Generator',
+      icon: Wand2,
+      description: 'Convert simple text into powerful AI prompts'
     }
   ];
 

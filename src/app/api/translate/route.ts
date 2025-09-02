@@ -4,6 +4,13 @@
 //   apiKey: process.env.GROQ_API_KEY,
 // });
 
+
+//----------------------------------------------------------------------
+// This is the OpenAI implementation
+
+//----------------------------------------------------------------------
+
+
 import OpenAI from 'openai';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -51,6 +58,7 @@ export async function POST(request: NextRequest) {
 
     Requirements:
     - Only return the translated code without any explanations
+    - Write all Code needed for the target language
     - Do not include markdown formatting or code blocks
     - Maintain the same functionality and logic
     - Use best practices for the target language
@@ -59,17 +67,37 @@ export async function POST(request: NextRequest) {
     Source code:
     ${code}`;
 
-    const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
-      messages: [
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      temperature: 0.1,
-      max_tokens: 2048,
-    });
+
+    //gpt-3.5-turbo
+    // const completion = await openai.chat.completions.create({
+    //   model: "gpt-3.5-turbo",
+    //  // model: "gpt-5-nano",
+    //   //stream: false,
+    //   messages: [
+    //     {
+    //       role: "user",
+    //       content: prompt
+    //     }
+    //   ],
+    //   temperature: 0.1,
+    //   max_tokens: 2048,
+    // });
+
+
+    //GPT-5-Nano
+
+const completion = await openai.chat.completions.create({
+  model: "gpt-5-nano",
+  messages: [
+    {
+      role: "user",
+      content: prompt
+    }
+  ],
+  max_completion_tokens: 2048    // ✅ Keep only this
+});
+
+
 
     const translatedCode = completion.choices[0]?.message?.content || '';
 
