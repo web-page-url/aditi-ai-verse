@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://code-translates.vercel.app'),
+  metadataBase: new URL('https://aditi-ai-verse.vercel.app'),
   title: {
     default: "Code Translator - AI-Powered Code Translation Tool",
     template: "%s | Code Translator"
@@ -58,13 +58,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://code-translates.vercel.app',
+    url: 'https://aditi-ai-verse.vercel.app',
     title: 'Code Translator - AI-Powered Code Translation Tool',
     description: 'Transform code between 9 programming languages instantly with AI precision. Convert C, C++, Python, Java, JavaScript, TypeScript, Ruby, PHP, and Rust code effortlessly.',
     siteName: 'Code Translator',
     images: [
       {
-        url: '/code-translates-2.0.jpg',
+        url: 'https://aditi-ai-verse.vercel.app/code-translates-2.0.jpg',
         width: 1200,
         height: 630,
         alt: 'Code Translator - AI-Powered Code Translation Tool by Anubhav',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Code Translator - AI-Powered Code Translation Tool',
     description: 'Transform code between 9 programming languages instantly with AI precision. Free online tool by Anubhav.',
-    images: ['/code-translates-2.0.jpg'],
+    images: ['https://aditi-ai-verse.vercel.app/code-translates-2.0.jpg'],
     creator: '@anubhav',
     site: '@anubhav',
   },
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
-    canonical: process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://code-translates.vercel.app',
+    canonical: 'https://aditi-ai-verse.vercel.app',
   },
   category: 'technology',
 };
@@ -110,6 +110,7 @@ export default function RootLayout({
         <meta name="application-name" content="Code Translator" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         <meta name="msapplication-tap-highlight" content="no" />
+        <link rel="icon" href="/aditi-blue-logo-1.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/icon" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon" sizes="180x180" />
         <link rel="icon" href="/aditi-blue-logo-1.ico" type="image/x-icon" />
@@ -132,6 +133,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-
-

@@ -24,18 +24,18 @@ const Navbar = () => {
       icon: Edit3,
       description: 'AI-powered creative writing and text improvement'
     },
-    // {
-    //   href: '/email-assistant',
-    //   label: 'Email Assistant',
-    //   icon: Mail,
-    //   description: 'Transform thoughts into professional emails with AI'
-    // },
-    // {
-    //   href: '/prompt-generator',
-    //   label: 'Prompt Generator',
-    //   icon: Wand2,
-    //   description: 'Convert simple text into powerful AI prompts'
-    // }
+    {
+      href: '/email-assistant',
+      label: 'Email Assistant',
+      icon: Mail,
+      description: 'Transform thoughts into professional emails with AI'
+    },
+    {
+      href: '/prompt-generator',
+      label: 'Prompt Generator',
+      icon: Wand2,
+      description: 'Convert simple text into powerful AI prompts'
+    }
   ];
 
   const isActive = (href: string) => {

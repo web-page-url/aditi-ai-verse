@@ -3,7 +3,7 @@ export function GET() {
     `User-agent: *
 Allow: /
 
-Sitemap: https://code-translates.vercel.app/sitemap.xml`,
+Sitemap: https://aditi-ai-verse.vercel.app/sitemap.xml`,
     {
       headers: {
         'Content-Type': 'text/plain',

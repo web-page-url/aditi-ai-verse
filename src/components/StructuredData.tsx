@@ -4,19 +4,19 @@ export default function StructuredData() {
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://code-translates.vercel.app/#website",
-        "url": "https://code-translates.vercel.app",
+        "@id": "https://aditi-ai-verse.vercel.app/#website",
+        "url": "https://aditi-ai-verse.vercel.app",
         "name": "Code Translator",
         "description": "AI-Powered Code Translation Tool - Transform code between 9 programming languages instantly",
         "publisher": {
-          "@id": "https://code-translates.vercel.app/#person"
+          "@id": "https://aditi-ai-verse.vercel.app/#person"
         },
         "potentialAction": [
           {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://code-translates.vercel.app/?q={search_term_string}"
+              "urlTemplate": "https://aditi-ai-verse.vercel.app/?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }
@@ -24,28 +24,28 @@ export default function StructuredData() {
       },
       {
         "@type": "WebPage",
-        "@id": "https://code-translates.vercel.app/#webpage",
-        "url": "https://code-translates.vercel.app",
+        "@id": "https://aditi-ai-verse.vercel.app/#webpage",
+        "url": "https://aditi-ai-verse.vercel.app",
         "name": "Code Translator - AI-Powered Code Translation Tool",
         "isPartOf": {
-          "@id": "https://code-translates.vercel.app/#website"
+          "@id": "https://aditi-ai-verse.vercel.app/#website"
         },
         "about": {
-          "@id": "https://code-translates.vercel.app/#person"
+          "@id": "https://aditi-ai-verse.vercel.app/#person"
         },
         "description": "Transform code between 9 programming languages instantly with AI precision. Convert C, C++, Python, Java, JavaScript, TypeScript, Ruby, PHP, and Rust code effortlessly.",
         "breadcrumb": {
-          "@id": "https://code-translates.vercel.app/#breadcrumb"
+          "@id": "https://aditi-ai-verse.vercel.app/#breadcrumb"
         },
         "inLanguage": "en-US"
       },
       {
         "@type": "Person",
-        "@id": "https://code-translates.vercel.app/#person",
+        "@id": "https://aditi-ai-verse.vercel.app/#person",
         "name": "Anubhav",
         "jobTitle": "Software Developer",
         "description": "Creator of Code Translator - AI-powered code translation tool",
-        "url": "https://code-translates.vercel.app",
+        "url": "https://aditi-ai-verse.vercel.app",
         "sameAs": [
           "https://www.linkedin.com/in/anubhav-chaudhary-4bba7918b/",
           "https://github.com/anubhav"
@@ -53,10 +53,10 @@ export default function StructuredData() {
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://code-translates.vercel.app/#software",
+        "@id": "https://aditi-ai-verse.vercel.app/#software",
         "name": "Code Translator",
         "description": "AI-Powered Code Translation Tool that converts code between 9 programming languages",
-        "url": "https://code-translates.vercel.app",
+        "url": "https://aditi-ai-verse.vercel.app",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Web Browser",
         "offers": {
@@ -65,7 +65,7 @@ export default function StructuredData() {
           "priceCurrency": "USD"
         },
         "creator": {
-          "@id": "https://code-translates.vercel.app/#person"
+          "@id": "https://aditi-ai-verse.vercel.app/#person"
         },
         "featureList": [
           "AI-powered code translation",
@@ -75,17 +75,17 @@ export default function StructuredData() {
           "Copy and share functionality",
           "Responsive design"
         ],
-        "screenshot": "https://code-translates.vercel.app/code-translates-2.0.jpg"
+        "screenshot": "https://aditi-ai-verse.vercel.app/code-translates-2.0.jpg"
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://code-translates.vercel.app/#breadcrumb",
+        "@id": "https://aditi-ai-verse.vercel.app/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://code-translates.vercel.app"
+            "item": "https://aditi-ai-verse.vercel.app"
           }
         ]
       }

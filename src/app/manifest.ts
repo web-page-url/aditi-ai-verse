@@ -17,6 +17,12 @@ export default function manifest(): MetadataRoute.Manifest {
     prefer_related_applications: false,
     icons: [
       {
+        src: '/aditi-blue-logo-1.png',
+        sizes: '32x32',
+        type: 'image/png',
+        purpose: 'any'
+      },
+      {
         src: '/icon',
         sizes: '32x32',
         type: 'image/png',
@@ -70,7 +76,7 @@ export default function manifest(): MetadataRoute.Manifest {
         url: '/',
         icons: [
           {
-            src: '/icon',
+            src: '/aditi-blue-logo-1.png',
             sizes: '32x32',
             type: 'image/png'
           }

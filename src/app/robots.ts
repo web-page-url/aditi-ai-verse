@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/private/'],
     },
-    sitemap: 'https://code-translates.vercel.app/sitemap.xml',
+    sitemap: 'https://aditi-ai-verse.vercel.app/sitemap.xml',
   }
 }
