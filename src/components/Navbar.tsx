@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Code2, Edit3, Mail, Wand2, Menu, X } from 'lucide-react';
 import { useState } from 'react';
@@ -23,18 +24,18 @@ const Navbar = () => {
       icon: Edit3,
       description: 'AI-powered creative writing and text improvement'
     },
-    {
-      href: '/email-assistant',
-      label: 'Email Assistant',
-      icon: Mail,
-      description: 'Transform thoughts into professional emails with AI'
-    },
-    {
-      href: '/prompt-generator',
-      label: 'Prompt Generator',
-      icon: Wand2,
-      description: 'Convert simple text into powerful AI prompts'
-    }
+    // {
+    //   href: '/email-assistant',
+    //   label: 'Email Assistant',
+    //   icon: Mail,
+    //   description: 'Transform thoughts into professional emails with AI'
+    // },
+    // {
+    //   href: '/prompt-generator',
+    //   label: 'Prompt Generator',
+    //   icon: Wand2,
+    //   description: 'Convert simple text into powerful AI prompts'
+    // }
   ];
 
   const isActive = (href: string) => {
@@ -49,14 +50,35 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-white" />
+          {/* <Link href="/" className="flex items-center">
+            <div className="relative w-12 h-12 flex-shrink-0">
+              <Image 
+                src="/aditi-blue-logo-1.png" 
+                alt="Aditi Ai Verse Logo" 
+                width={48} 
+                height={48} 
+                className="rounded-lg object-contain" 
+              />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent ml-4">
               Aditi Ai Verse
             </span>
-          </Link>
+          </Link> */}
+
+          <Link href="/" className="flex items-center">
+  <div className="relative w-12 h-12 flex-shrink-0 flex items-center justify-center">
+    <Image
+      src="/aditi-blue-logo-1.png"
+      alt="Aditi Ai Verse Logo"
+      width={48}
+      height={48}
+      className="rounded-lg object-contain"
+    />
+  </div>
+  <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent ml-4 self-center">
+    Aditi Ai Verse
+  </span>
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">

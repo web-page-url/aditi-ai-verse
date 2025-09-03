@@ -94,7 +94,7 @@ const completion = await openai.chat.completions.create({
       content: prompt
     }
   ],
-  max_completion_tokens: 2048    // ✅ Keep only this
+  max_completion_tokens: 5048    // ✅ Keep only this
 });
 
 

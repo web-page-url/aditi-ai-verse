@@ -69,7 +69,7 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 border-b border-white/20 bg-white/10 dark:bg-black/10 backdrop-blur-xl sticky top-0">
+      {/* <header className="relative z-10 border-b border-white/20 bg-white/10 dark:bg-black/10 backdrop-blur-xl sticky top-0">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       {/* Main Content */}
       <main className="relative z-10 container mx-auto px-4 py-12">

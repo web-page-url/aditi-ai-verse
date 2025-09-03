@@ -112,7 +112,8 @@ export default function RootLayout({
         <meta name="msapplication-tap-highlight" content="no" />
         <link rel="icon" href="/icon" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-icon" sizes="180x180" />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" href="/aditi-blue-logo-1.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/aditi-blue-logo-1.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="format-detection" content="telephone=no" />
