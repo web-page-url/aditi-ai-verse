@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     siteName: 'Code Translator',
     images: [
       {
-        url: 'https://aditi-ai-verse.vercel.app/code-translates-2.0.jpg',
+        url: 'https://aditi-ai-verse.vercel.app/aditi-blue-logo-1.png',
         width: 1200,
         height: 630,
         alt: 'Code Translator - AI-Powered Code Translation Tool by Anubhav',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Code Translator - AI-Powered Code Translation Tool',
     description: 'Transform code between 9 programming languages instantly with AI precision. Free online tool by Anubhav.',
-    images: ['https://aditi-ai-verse.vercel.app/code-translates-2.0.jpg'],
+    images: ['https://aditi-ai-verse.vercel.app/aditi-blue-logo-1.png'],
     creator: '@anubhav',
     site: '@anubhav',
   },

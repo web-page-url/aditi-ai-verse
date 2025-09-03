@@ -75,7 +75,7 @@ export default function StructuredData() {
           "Copy and share functionality",
           "Responsive design"
         ],
-        "screenshot": "https://aditi-ai-verse.vercel.app/code-translates-2.0.jpg"
+        "screenshot": "https://aditi-ai-verse.vercel.app/aditi-blue-logo-1.png"
       },
       {
         "@type": "BreadcrumbList",

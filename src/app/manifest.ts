@@ -61,7 +61,7 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     screenshots: [
       {
-        src: '/code-translates-2.0.jpg',
+        src: '/aditi-blue-logo-1.png',
         sizes: '1200x630',
         type: 'image/jpeg',
         form_factor: 'wide',
