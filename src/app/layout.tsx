@@ -19,27 +19,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://aditi-ai-verse.vercel.app'),
   title: {
-    default: "Code Translator - AI-Powered Code Translation Tool",
-    template: "%s | Code Translator"
+    default: "Aditi AI Verse - Boost your productivity with Aditi AI Tools",
+    template: "%s | Aditi AI Verse"
   },
-  description: "Transform code between 9 programming languages instantly with AI precision. Convert C, C++, Python, Java, JavaScript, TypeScript, Ruby, PHP, and Rust code effortlessly. Free online code translator by Anubhav.",
+  description: "Aditi AI Verse is a collection of AI-powered tools to help you with your daily tasks. It includes an email writer, a prompt better ai, a writing assistant, and a code convertor.",
   keywords: [
-    "code translator",
-    "programming",
-    "code conversion",
-    "AI code translator",
-    "multi-language programming",
-    "Python to JavaScript",
-    "Java to Python",
-    "C++ to Rust",
-    "TypeScript converter",
-    "online code converter",
-    "free code translator",
-    "Anubhav",
-    "developer tools",
-    "programming tools",
-    "code transformation",
-    "syntax converter"
+    "email writer",
+    "prompt better",
+    "writing assistant",
+    "code convertor",
+    "AI tools",
+    "Aditi AI Verse",
+    "Anubhav"
   ],
   authors: [{ name: "Anubhav" }],
   creator: "Anubhav",
@@ -59,23 +50,23 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://aditi-ai-verse.vercel.app',
-    title: 'Code Translator - AI-Powered Code Translation Tool',
-    description: 'Transform code between 9 programming languages instantly with AI precision. Convert C, C++, Python, Java, JavaScript, TypeScript, Ruby, PHP, and Rust code effortlessly.',
-    siteName: 'Code Translator',
+    title: 'Aditi AI Verse',
+    description: 'Aditi AI Verse is a collection of AI-powered tools to help you with your daily tasks. It includes an email writer, a prompt better, a writing assistant, and a code convertor.',
+    siteName: 'Aditi AI Verse',
     images: [
       {
         url: 'https://aditi-ai-verse.vercel.app/aditi-blue-logo-1.png',
         width: 1200,
         height: 630,
-        alt: 'Code Translator - AI-Powered Code Translation Tool by Anubhav',
+        alt: 'Aditi AI Verse - AI-Powered Tools by Anubhav',
         type: 'image/jpeg',
       }
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Code Translator - AI-Powered Code Translation Tool',
-    description: 'Transform code between 9 programming languages instantly with AI precision. Free online tool by Anubhav.',
+    title: 'Aditi AI Verse',
+    description: 'Aditi AI Verse is a collection of AI-powered tools to help you with your daily tasks. It includes an email writer, a prompt better, a writing assistant, and a code convertor.',
     images: ['https://aditi-ai-verse.vercel.app/aditi-blue-logo-1.png'],
     creator: '@anubhav',
     site: '@anubhav',
